@@ -17,7 +17,7 @@ Code(提取码)： wwxw
 A brief overview of these 9 sequences are shown as follows:
 | No | Name | Size | Duration | Traveling length <sup>[1] | Return to origin <sup>[2] | Sensor degrade
 | :-----: | ----: | :----: |  :----: |  :----: | :----: |:----: |
-| 1 | degenerate_seq_00.bag   | 864.8 MB | 101 s   | 74.9 m | Yes | LiDAR, Camera |
+| 1 | degenerate_seq_00.bag   | 864.8 MB | 101 s   | 74.9 m | Yes | Camera<sup>[3]</sup>, LiDAR |
 | 2 | degenerate_seq_01.bag   | 2.1 GB   | 86 s    | 53.3 m | Yes | LiDAR
 | 3 | degenerate_seq_02.bag   | 2.1 GB   | 85 s    | 75.2 m | Yes | LiDAR
 | 4 | hku_campus_seq_00.bag   | 1.4 GB   | 202 s   | 190.6 m | Yes | - -
@@ -28,5 +28,6 @@ A brief overview of these 9 sequences are shown as follows:
 | 9 | hkust_campus_seq_01.bag | 8.2 GB   | 1162 s  | 1524 m | Yes | - -
 
 [1]: The length of traveling is calculated with the result of [R3LIVE](https://github.com/hku-mars/r3live) algorithm.<br>
-[2]: We sampled the data by traveling a loop, with finally returning back to the origin (i.e., the distance between the starting and ending position is less than 10 cm).
+[2]: We sampled the data by traveling a loop, with finally returning back to the origin (i.e., the distance between the starting and ending position is less than 10 cm).<br>
+[3]: With very limited visual features in this scenario (see Experiment-1 of our [paper](https://github.com/hku-mars/r3live/blob/master/papers/R3LIVE:%20A%20Robust%2C%20Real-time%2C%20RGB-colored%2C%20LiDAR-Inertial-Visual%20tightly-coupled%20stateEstimation%20and%20mapping%20package.pdf)).
 
