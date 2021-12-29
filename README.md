@@ -28,5 +28,5 @@ A brief overview of these 9 sequences are shown as follows:
 | 9 | hkust_campus_seq_01.bag | 8.2 GB   | 1162 s  | 1524 m | Yes | - -
 
 [1]: The length of traveling is calculated with the result of [R3LIVE](https://github.com/hku-mars/r3live) algorithm.<br>
-[2]: Returning back to the origin with the location error less than 10 cm.
+[2]: We sampled the data by traveling a loop, with finally returning back to the origin (i.e., the distance between the starting and ending position is less than 10 cm).
 
