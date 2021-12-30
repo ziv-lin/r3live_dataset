@@ -1,8 +1,8 @@
 # R3LIVE Dataset  
-## Introduction
+## 1. Introduction
 This project page introduces the datasets for evaluating the [R3LIVE](https://github.com/hku-mars/r3live) algorithm, which includes 9 rosbag files sampled with a handheld device (CAD files are also available on [github](https://github.com/ziv-lin/rxlive_handheld)) in HKU and HKUST campuses.
 
-## How to get?
+## 2. How to get?
 Our datasets can be downloaded from [Google drive](https://drive.google.com/drive/folders/15i-TRa0EA8BCbNdARVqPMDsU9JOlagVF?usp=sharing):
 ```
 https://drive.google.com/drive/folders/15i-TRa0EA8BCbNdARVqPMDsU9JOlagVF?usp=sharing
@@ -13,7 +13,7 @@ Link(链接)  ： https://pan.baidu.com/s/1zmVxkcwOSul8oTBwaHfuFg
 Code(提取码)： wwxw
 ```
 
-## Brief overview
+## 3. Brief overview
 A brief overview of these 9 sequences are shown as follows:
 | No | Name | Size | Duration | Traveling length <sup>[1] | Return to origin <sup>[2] | Sensor degrade
 | :-----: | ----: | :----: |  :----: |  :----: | :----: |:----: |
@@ -31,28 +31,59 @@ A brief overview of these 9 sequences are shown as follows:
 [2]: We sampled the data by traveling a loop, with finally returning back to the origin (i.e., the distance between the starting and ending position is less than 10 cm).<br>
 [3]: With very limited visual features in this scenario (see Experiment-1 of our [paper](https://github.com/hku-mars/r3live/blob/master/papers/R3LIVE:%20A%20Robust%2C%20Real-time%2C%20RGB-colored%2C%20LiDAR-Inertial-Visual%20tightly-coupled%20stateEstimation%20and%20mapping%20package.pdf)).
 
-## Introduction to each sequence
-### degenerate_seq_00
-    TODO
-### degenerate_seq_01
-    TODO
-### degenerate_seq_02
-    TODO
-### hku_campus_seq_00
-    TODO
-### hku_campus_seq_01
-    TODO
-### hku_park_00
-    TODO
-### hku_park_01
-    TODO
-### hku_park_01
-    TODO
-### hkust_campus_seq_00
-    TODO
-### hkust_campus_seq_01
-    TODO
+## 4. Details of each sequence
+### 4.1 degenerate_seq_00
+In this sequence, we sampled the data by passing through a narrow “T”-shape passage while occasionally facing against the sidewalls, where the visual textures on walls are very limited (see Fig. a and Fig. c). This sequence of data is used for evaluating the robustness of [R3LIVE](https://github.com/hku-mars/r3live) in simultaneously LiDAR degenerated and visual texture-less
+environments. We refer our users to see Experiment-1 of our [R3LIVE paper](https://github.com/hku-mars/r3live/blob/master/papers/R3LIVE:%20A%20Robust%2C%20Real-time%2C%20RGB-colored%2C%20LiDAR-Inertial-Visual%20tightly-coupled%20stateEstimation%20and%20mapping%20package.pdf) for more details.
+
+<div align="center">
+<img src="pics/exp_00.png" alt="video" width="45%" />
+<img src="gifs/degenerate_00.gif" alt="video" width="45%"/>
+</div>
+
+### 4.2 degenerate_seq_01
+In this sequence, we sampled the data with data with intentionally making the LiDAR sensor facing the pure plane (i.e., the floor), shown in the following figure. In this scenario, the LiDAR is well-known degenerated in estimating the full pose. 
+<div align="center">
+<img src="pics/degenerate_01_pic.png" width="90%" />
+<img src="gifs/degenerate_01.gif" width="90%" />
+</div>
+
+### 4.3 degenerate_seq_02
+With similar to 'degenerate_seq_01', we sampled this sequence of data for testing the robustness of [R3LIVE](https://github.com/hku-mars/r3live) in LiDAR degenerated scenario, shown as below:
+<div align="center">
+<img src="pics/degenerate_02_pic.png" width="90%" />
+<img src="gifs/degenerate_02.gif" width="90%" />
+</div>
+
+### 4.4 hku_campus_seq_00 and hku_campus_seq_01
+In these two sequence, we sample data in the campus of The University of Hong Kong (HKU). We use this two sequence of data for evaluating the capacity of [R3LIVE](https://github.com/hku-mars/r3live)
+for real-time reconstructing the precise, dense, 3D, RGB-colored map. The mapping results of [R3LIVE](https://github.com/hku-mars/r3live) in these two sequences are shown as follow:
+
+<div align="center">
+<img src="pics/cover_v4.jpg" width = 90% /><br>
+<font color=#a0a0a0 size=2>Our mapping result of sequence "hku_campus_seq_00".</font>
+<img src="pics/hku_campus_seq_01.png" width="90%" /><br>
+<font color=#a0a0a0 size=2>Our mapping result of sequence "hku_campus_seq_01".</font>
+</div>
+
+### 4.5 hku_park_00 and hku_park_01
+In these two sequences, we sample the data in the complex and unstructured environment, where have a lot of trees, bushes, flowers, and etc.  The mapping results of [R3LIVE](https://github.com/hku-mars/r3live) in these two sequences are shown below:
+<div align="center">
+<img src="pics/hku_park_00.png" width="90%" /><br>
+<font color=#a0a0a0 size=2>Our mapping result of sequence "hku_park_00".</font>
+<img src="pics/hku_park_01.png" width="90%" /><br>
+<font color=#a0a0a0 size=2>Our mapping result of sequence "hku_park_01".</font>
+</div>
+
+### 4.6 hkust_campus_seq_00 and hkust_campus_seq_01
+In these two sequences, we collect the data within the campus of the Hong Kong University
+of Science and Technology (HKUST), with the length of traveling reach as 1317 and 1524 meters. We use these two sequences for testing the ability of [R3LIVE](https://github.com/hku-mars/r3live) in real-time reconstructing the precise, dense, 3D, RGB-colored maps of large-scale environment.
+We refer our users to see Experiment-2 of our [R3LIVE paper](https://github.com/hku-mars/r3live/blob/master/papers/R3LIVE:%20A%20Robust%2C%20Real-time%2C%20RGB-colored%2C%20LiDAR-Inertial-Visual%20tightly-coupled%20stateEstimation%20and%20mapping%20package.pdf) for getting more details.
+
+<div align="center">
+<img src="pics/experiment_2_merge_comp.jpg" width="90%" />
+</div>
 
 ## Contact us
 For any technical issues, please contact me via email Jiarong Lin < ziv.lin.ljrATgmail.com >.<br>
-For commercial use, please contact Dr. Fu Zhang < fuzhangAThku.hk >
+For commercial use, please contact me < ziv.lin.ljrATgmail.com > and Dr. Fu Zhang < fuzhangAThku.hk >
