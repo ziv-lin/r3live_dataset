@@ -1,13 +1,13 @@
 # R3LIVE Dataset  
 ## Introduction
-This project page introduce the datasets for evaluating [R3LIVE](https://github.com/hku-mars/r3live) algorithm, which include 9 rosbag files sampled with our handheld device (CAD files are also available on [github](git@github.com:ziv-lin/rxlive_handheld.git)) in HKU and HKUST campus.
+This project page introduces the datasets for evaluating the [R3LIVE](https://github.com/hku-mars/r3live) algorithm, which includes 9 rosbag files sampled with a handheld device (CAD files are also available on [github](git@github.com:ziv-lin/rxlive_handheld.git)) in HKU and HKUST campuses.
 
 ## How to get?
-Our datasets can be download from [Google drive](https://drive.google.com/drive/folders/15i-TRa0EA8BCbNdARVqPMDsU9JOlagVF?usp=sharing):
+Our datasets can be downloaded from [Google drive](https://drive.google.com/drive/folders/15i-TRa0EA8BCbNdARVqPMDsU9JOlagVF?usp=sharing):
 ```
 https://drive.google.com/drive/folders/15i-TRa0EA8BCbNdARVqPMDsU9JOlagVF?usp=sharing
 ```
-or [Baidu-NetDisk [百度网盘]](https://pan.baidu.com/s/1zmVxkcwOSul8oTBwaHfuFg):
+or from [Baidu-NetDisk [百度网盘]](https://pan.baidu.com/s/1zmVxkcwOSul8oTBwaHfuFg):
 ```
 Link(链接)  ： https://pan.baidu.com/s/1zmVxkcwOSul8oTBwaHfuFg
 Code(提取码)： wwxw
