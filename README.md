@@ -52,3 +52,7 @@ A brief overview of these 9 sequences are shown as follows:
     TODO
 ### hkust_campus_seq_01
     TODO
+
+## Contact us
+For any technical issues, please contact me via email Jiarong Lin < ziv.lin.ljrATgmail.com >.<br>
+For commercial use, please contact Dr. Fu Zhang < fuzhangAThku.hk >
