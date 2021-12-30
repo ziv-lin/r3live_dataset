@@ -17,7 +17,7 @@ Code(提取码)： wwxw
 A brief overview of these 9 sequences are shown as follows:
 | No | Name | Size | Duration | Traveling length <sup>[1] | Return to origin <sup>[2] | Sensor degrade
 | :-----: | ----: | :----: |  :----: |  :----: | :----: |:----: |
-| 1 | degenerate_seq_00.bag   | 0.8 GB | 101 s   | 74.9 m | Yes | Camera<sup>[3]</sup>, LiDAR |
+| 1 | degenerate_seq_00.bag   | 864.8 MB | 101 s   | 74.9 m | Yes | Camera<sup>[3]</sup>, LiDAR |
 | 2 | degenerate_seq_01.bag   | 2.1 GB   | 86 s    | 53.3 m | Yes | LiDAR
 | 3 | degenerate_seq_02.bag   | 2.1 GB   | 85 s    | 75.2 m | Yes | LiDAR
 | 4 | hku_campus_seq_00.bag   | 1.4 GB   | 202 s   | 190.6 m | Yes | - -
