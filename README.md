@@ -34,7 +34,7 @@ A brief overview of these 9 sequences are shown as follows:
 ## 4. Details of each sequence
 ### 4.1 degenerate_seq_00
 In this sequence, we sampled the data by passing through a narrow “T”-shape passage while occasionally facing against the sidewalls, where the visual textures on walls are very limited (see Fig. a and Fig. c). This sequence of data is used for evaluating the robustness of [R3LIVE](https://github.com/hku-mars/r3live) in simultaneously LiDAR degenerated and visual texture-less
-environments. We refer our users to see Experiment-1 of our [R3LIVE paper](https://github.com/hku-mars/r3live/blob/master/papers/R3LIVE:%20A%20Robust%2C%20Real-time%2C%20RGB-colored%2C%20LiDAR-Inertial-Visual%20tightly-coupled%20stateEstimation%20and%20mapping%20package.pdf) for more details.
+environments. We refer our users to see Experiment-1 of our [paper](https://github.com/hku-mars/r3live/blob/master/papers/R3LIVE:%20A%20Robust%2C%20Real-time%2C%20RGB-colored%2C%20LiDAR-Inertial-Visual%20tightly-coupled%20stateEstimation%20and%20mapping%20package.pdf) for more details.
 
 <div align="center">
 <img src="pics/exp_00.png" alt="video" width="45%" />
@@ -67,7 +67,7 @@ for real-time reconstructing the precise, dense, 3D, RGB-colored map. The mappin
 </div>
 
 ### 4.5 hku_park_00 and hku_park_01
-In these two sequences, we sample the data in the complex and unstructured environment, where have a lot of trees, bushes, flowers, and etc.  The mapping results of [R3LIVE](https://github.com/hku-mars/r3live) in these two sequences are shown below:
+In these two sequences, we sample the data in a complex and unstructured environment, where have a lot of trees, bushes, flowers, and etc.  The mapping results of [R3LIVE](https://github.com/hku-mars/r3live) in these two sequences are shown below:
 <div align="center">
 <img src="pics/hku_park_00.png" width="90%" /><br>
 <font color=#a0a0a0 size=2>Our mapping result of sequence "hku_park_00".</font>
@@ -78,7 +78,7 @@ In these two sequences, we sample the data in the complex and unstructured envir
 ### 4.6 hkust_campus_seq_00 and hkust_campus_seq_01
 In these two sequences, we collect the data within the campus of the Hong Kong University
 of Science and Technology (HKUST), with the length of traveling reach as 1317 and 1524 meters. We use these two sequences for testing the ability of [R3LIVE](https://github.com/hku-mars/r3live) in real-time reconstructing the precise, dense, 3D, RGB-colored maps of large-scale environment.
-We refer our users to see Experiment-2 of our [R3LIVE paper](https://github.com/hku-mars/r3live/blob/master/papers/R3LIVE:%20A%20Robust%2C%20Real-time%2C%20RGB-colored%2C%20LiDAR-Inertial-Visual%20tightly-coupled%20stateEstimation%20and%20mapping%20package.pdf) for getting more details.
+We refer our users to see Experiment-2 of our [paper](https://github.com/hku-mars/r3live/blob/master/papers/R3LIVE:%20A%20Robust%2C%20Real-time%2C%20RGB-colored%2C%20LiDAR-Inertial-Visual%20tightly-coupled%20stateEstimation%20and%20mapping%20package.pdf) for getting more details.
 
 <div align="center">
 <img src="pics/experiment_2_merge_comp.jpg" width="90%" />
