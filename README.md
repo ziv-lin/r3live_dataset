@@ -31,3 +31,24 @@ A brief overview of these 9 sequences are shown as follows:
 [2]: We sampled the data by traveling a loop, with finally returning back to the origin (i.e., the distance between the starting and ending position is less than 10 cm).<br>
 [3]: With very limited visual features in this scenario (see Experiment-1 of our [paper](https://github.com/hku-mars/r3live/blob/master/papers/R3LIVE:%20A%20Robust%2C%20Real-time%2C%20RGB-colored%2C%20LiDAR-Inertial-Visual%20tightly-coupled%20stateEstimation%20and%20mapping%20package.pdf)).
 
+## Introduction to each sequence
+### degenerate_seq_00
+    TODO
+### degenerate_seq_01
+    TODO
+### degenerate_seq_02
+    TODO
+### hku_campus_seq_00
+    TODO
+### hku_campus_seq_01
+    TODO
+### hku_park_00
+    TODO
+### hku_park_01
+    TODO
+### hku_park_01
+    TODO
+### hkust_campus_seq_00
+    TODO
+### hkust_campus_seq_01
+    TODO
