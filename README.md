@@ -91,25 +91,47 @@ and you will see the print as below:
 ```
 "Camera_timestamp = 121202934544, exposure_time = 2.948 ms, gain = 8.9927 db"
 ```
+## 5. ArUco marker
 
+In some sequences of our R3LIVE-dataset, we have placed the ArUco marker board for providing the ground-truth reference pose, as shown in the below figure:
 
-## 5. Details of each sequence
+<div align="center">
+<img src="pics/aruco_maker.jpg" width="96.0%" /><br>
+</div>
 
-### 5.1 degenerate_seq_00
+The marker we used was generated using [create_board_charuco.cpp](https://github.com/opencv/opencv_contrib/blob/master/modules/aruco/samples/create_board_charuco.cpp) from the OpenCV library. The marker was created with the following command:
+```
+[YOUR_BUILD_BIN_FILES] -w=10 -h=14 -sl=300 -ml=250 -d=13 [YOUR_GENERATED_IMAGE]
+```
+For example, as my command shown below:
+```
+./create_board_charuco -w=10 -h=14 -sl=300 -ml=250 -d=13 ./aruco_maker_board.png
+```
+
+Ideally, you will get the generated marker image same as below, **with each grid on our marker board having a size of 0.0186 m.** 
+<div align="center">
+<img src="pics/aruco_maker_board.png" width="60.0%" /><br>
+</div>
+
+Then, you can the ArUco maker detector to detect the maker and then calculate the ground-truth pose of our R3LIVE-dataset. **Notice that each grid of our used marker board has a size of 0.0186 m.** 
+
+## 6. Details of each sequence
+
+### 6.1 degenerate_seq_00
 In this sequence, we sampled the data with data with intentionally making the LiDAR sensor facing the pure plane (i.e., the floor), as shown in the following figure. In this scenario, the LiDAR is well-known degenerated in estimating the full pose.
 <div align="center">
 <img src="pics/degenerate_01_pic.png" width="48.0%" /><br>
 <img src="gifs/degenerate_01.gif" width="48.0%" />
 </div>
 
-### 5.2 degenerate_seq_01
+### 6.2 degenerate_seq_01
 Similar to 'degenerate_seq_00', we sampled this sequence of data for testing the robustness of [R3LIVE](https://github.com/hku-mars/r3live) in LiDAR degenerated scenario, shown as below:
 <div align="center">
 <img src="pics/degenerate_02_pic.png" width="48.0%" /><br>
 <img src="gifs/degenerate_02.gif" width="48.0%" />
 </div>
 
-### 5.3 degenerate_seq_02
+### 6.3 degenerate_seq_02
 In this sequence, we sampled the data by passing through a narrow “T”-shape passage while occasionally facing against the sidewalls, where the visual textures on walls are very limited (see Fig. a and Fig. c). This sequence of data is used for evaluating the robustness of [R3LIVE](https://github.com/hku-mars/r3live) in simultaneously LiDAR degenerated and visual texture-less environments. We refer our users to see Experiment-1 of our [paper](https://github.com/hku-mars/r3live/blob/master/papers/R3LIVE:%20A%20Robust%2C%20Real-time%2C%20RGB-colored%2C%20LiDAR-Inertial-Visual%20tightly-coupled%20stateEstimation%20and%20mapping%20package.pdf) for more details.
 
 <div align="center">
@@ -118,7 +140,7 @@ In this sequence, we sampled the data by passing through a narrow “T”-shape 
 </div>
 
 
-### 5.4 hku_campus_seq_00~03
+### 6.4 hku_campus_seq_00~03
 In these four sequences, we sample data in the campus of The University of Hong Kong (HKU). We use these sequences of data to evaluate the capacity of [R3LIVE](https://github.com/hku-mars/r3live) for real-time reconstructing the radiance map. The mapping results of R3LIVE in these four sequences are shown follows:
 
 <div align="center">
@@ -130,7 +152,7 @@ In these four sequences, we sample data in the campus of The University of Hong 
 <font color=#a0a0a0 size=2>Sequence ``hku_campus_seq_/02/03" are sampled at the same place but at different times of day (evening and morning, respectively) and with different traveling trajectories. (a) is the birdview of map of sequence ``hku_campus_seq_02", with the closeup view of details are shown in (b) and (c).</font>
 </div>
 
-### 5.5 hku_park_00~01
+### 6.5 hku_park_00~01
 In these two sequences, we sample the data in a complex and unstructured environment, where have a lot of trees, bushes, flowers, and etc.  The mapping results of [R3LIVE](https://github.com/hku-mars/r3live) in these two sequences are shown below:
 <div align="center">
 <img src="pics/hku_park_00.jpg" width="48.1%" /><br>
@@ -139,14 +161,14 @@ In these two sequences, we sample the data in a complex and unstructured environ
 <font color=#a0a0a0 size=2>Sequence "hku_park_01" is collected in a cluttered environment with many trees and bushes. (a) is the birdview of the whole radiance map, with its details are shown in (b) and (c).</font>
 </div>
 
-### 5.6 hku_main_building
+### 6.6 hku_main_building
 In sequence "hku_main_building", we collect the data in both interior and exterior of the main building of HKU. The radiance map reconstructed by [R3LIVE](https://github.com/hku-mars/r3live) is shown as below
 <div align="center">
 <img src="pics/hku_main_building.jpg" width="98.1%" /><br>
 <font color=#a0a0a0 size=2>Our reconstructed radiance map of the main building of HKU. (a) The bird's view of the map, with its details shown in (b~n). (b~g) closeup of outdoor scenarios and (h~n) closeup of indoor scenarios.</font><br>
 </div>
 
-### 5.6 hkust_campus_seq_00~03
+### 6.7 hkust_campus_seq_00~03
 In these four sequences, we collect the data within the campus of the Hong Kong University of Science and Technology (HKUST), with the length of traveling reach as 1317 and 1524 meters. We use these two sequences to test the ability of [R3LIVE](https://github.com/hku-mars/r3live) in real-time reconstructing the radiance map in a large-scale environment.
 
 <div align="center">
