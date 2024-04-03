@@ -4,9 +4,9 @@ This reposity introduces an associate dataset of our work R3LIVE, termed R3LIVE-
 
 
 ## 2. How to get?
-Our dataset can be downloaded form [Microsoft OneDrive](https://connecthkuhk-my.sharepoint.com/:f:/g/personal/zivlin_connect_hku_hk/Eopy_2b77h9MoazWbQYC3-wBvj7rZ2xDs2hv-ilWurhdRA?e=mhDohb)
+Our dataset can be downloaded form [Microsoft OneDrive](https://1drv.ms/f/c/3e715b7aa136191a/EqpK7QnN4OpCqHmL2ykpZ50Bjz3pyJ0kwyvwpBBLtzR4bQ?e=TqPN8E)
 ```
-https://connecthkuhk-my.sharepoint.com/:f:/g/personal/zivlin_connect_hku_hk/Eopy_2b77h9MoazWbQYC3-wBvj7rZ2xDs2hv-ilWurhdRA?e=mhDohb
+https://1drv.ms/f/c/3e715b7aa136191a/EqpK7QnN4OpCqHmL2ykpZ50Bjz3pyJ0kwyvwpBBLtzR4bQ?e=TqPN8E
 ```
 or from [Baidu-NetDisk [百度网盘]](https://pan.baidu.com/s/1zmVxkcwOSul8oTBwaHfuFg):
 ```
