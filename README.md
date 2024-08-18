@@ -180,7 +180,8 @@ In these four sequences, we collect the data within the campus of the Hong Kong 
 <font color=#a0a0a0 size=1>Sequence ``hkust_campus_seq_03" captures most part of the HKUST's campus,  with the traveling length reaching 2.1 Km. We collected the data starting from the sea front (see the lower left of (a))  and ending at the entrance piazza (the upper right of (a)) of HKUST. In (a), we merge our reconstructed point cloud map (points are colored by their heigh)  with the Google Earth satellite image and find them aligned well. (b)  shows the side view of the map. (c~h) are the closeup views of the details marked in (a). </font><br>
 </div>
 
-
+## License
+This dataset is licensed under a [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-nc-sa/4.0/) and is intended for non-commercial academic use. For commercial use, please contact me <ziv.lin.ljrATgmail.com> and Dr. Fu Zhang <fuzhangAThku.hk> to negotiate a different license.
 
 ## Contact us
 For any technical issues, please contact me via email Jiarong Lin < ziv.lin.ljrATgmail.com >.<br>
